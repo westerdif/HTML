@@ -9,6 +9,11 @@
     <body>
         <h1>2줄 3칸 기본 표 만들기</h1>
         <table border="1" width="50%">
+            <caption>
+                <strong>기본 테이블 입니다.</strong><br>
+                2줄 3칸짜리 표입니다.
+
+            </caption>
             <!--1번 줄-->
             <tr>
                 <td>1</td>
@@ -27,6 +32,11 @@
         <hr>
 
         <h1>표에 제목 셀 만들기</h1>
+            <figure>
+                <figcaption>
+                    표에 제목 셀 만들기입니다.
+                </figcaption>
+            </figure>
         <table border="1" width="100%">
             <tr>
                 <th>학과</th>
@@ -62,6 +72,96 @@
                 <td>10</td>
                 <td>11</td>
             </tr>
+        </table>
+
+        <hr>
+
+        <h1>
+            <strong style="background-color:rgb(225, 228, 76)">구민수의 대학시간표</strong>
+        </h1>
+
+        <!--thead, tbody, tfoot-->
+        <table border="1" width="100%">
+            <thead>
+                <tr>
+                    <th>구분</th>
+                    <th>월</th>
+                    <th>화</th>
+                    <th>수</th>
+                    <th>목</th>
+                    <th>금</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>1교시</th>
+                    <td>.</td>
+                    <td rowspan="2" style="background-color:skyblue">s/w 프로그래밍 사고</td>
+                    <td rowspan="2" style="background-color:skyblue">s/w 프로그래밍 사고</td>
+                    <td rowspan="2" style="background-color:rgb(120, 231, 203)">공학적 글쓰기</td>
+                    <td>.</td>
+                </tr>
+                <tr>
+                    <th>2교시</th>
+                    <td rowspan="2" style="background-color: brown;">컴퓨터공학개론</td>
+                    <td>.</td>
+                </tr>
+                <tr>
+                    <th>3교시</th>
+                    <td rowspan="2" style="background-color:rgb(161, 102, 94)">쉽게 배우는 클래식</td>
+                    <td>.</td>
+                    <td rowspan="2" style="background-color:rgb(144, 110, 182)">맞춤형 취업설계</td>
+                    <td>.</td>
+                </tr>
+                <tr>
+                    <th>4교시</th>
+                    <td>.</td>
+                    <td style="background-color: brown;">컴퓨터공학개론</td>
+                    <td>.</td>
+                </tr>
+                <tr>
+                    <th>5교시</th>
+                    <td rowspan="2" style="background-color:rgb(96, 212, 96)">왭제작</td>
+                    <td rowspan="2" style="background-color:rgb(56, 179, 76)">글로벌직업탐구</td>
+                    <td>.</td>
+                    <td>.</td>
+                    <td>.</td>
+                </tr>
+                <tr>
+                    <th>6교시</th>
+                    <td>.</td>
+                    <td style="background-color:rgb(209, 207, 82)">대학생활과 진로탐색1</td>
+                    <td>.</td>
+                </tr>
+                <tr>
+                    <th>7교시</th>
+                    <td>.</td>
+                    <td>.</td>
+                    <td>.</td>
+                    <td>.</td>
+                    <td rowspan="2" style="background-color:rgb(53, 173, 182)">왭제작</td>
+                </tr>
+                <tr>
+                    <th>8교시</th>
+                    <td>.</td>
+                    <td>.</td>
+                    <td>.</td>
+                    <td>.</td>
+                </tr>
+                <tr>
+                    <th>9교시</th>
+                    <td>.</td>
+                    <td>.</td>
+                    <td>.</td>
+                    <td>.</td>
+                    <td>.</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="6">1교시 수업 시작은 9시 30분 입니다.</td>
+                </tr>
+            </tfoot>
         </table>
     </body>
 </html>
