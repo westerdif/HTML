@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+    <html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>블록 레벨 요소와 인라인 레벨 요소</title>
+        <style>
+            /*컨텐츠 크기 확인*/
+            .content{
+                width: 100px;
+                height: 100px;
+                padding: 10px;
+                margin: 30px;
+                border: 5px solid black;
+            }
+
+             /*이미지 블록으로 정리*/
+            #block > img{
+                display: block;
+                margin: 10px;
+            }
+
+            /*메뉴(리스트) 배치*/
+            #list > li{
+                background-color: darkorange;
+                margin: 10px;
+                width: 150px;
+                height: 50px;
+                /*블럭 요소는 가로, 세로 길이 지정가능*/
+            }
+            
+
+            #inline > li{
+                background-color: cadetblue;
+                margin: 10px;
+                display: inline;
+                width: 150px;
+                height: 50px;
+                /*인라인 요소는 가로, 세로 길이 지정 불가능*/
+            }
+
+            #inlineblock > li{
+                background-color: rgb(30, 164, 81);
+                margin: 10px;
+                display: inline-block;
+                width: 150px;
+                height: 50px;
+                /*인라인-블럭은 가로 정렬되며, 가로, 세로 길이 지정 가능*/
+            }
+
+            /*컨테츠 마진 중첩*/
+            .overlap{
+                width: 100px;
+                height: 100px;
+                padding: 10px;
+                margin: 30px;
+                border: 5px solid black;
+                display: inline-block;
+            }
+
+            /*박스 사이즈 정하기*/
+            .box1, .box2{
+                width: 300px;
+                height: 150px;
+                margin: 30px;
+                padding: 10px;
+                border: 5px solid black;
+            }
+
+            .box1{
+                box-sizing: content-box;
+            }
+
+            .box2{
+                box-sizing: border-box;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>컨텐츠 크기</h1>
+        <div class="content" style="background-color: crimson;"></div>
+        <div class="content" style="background-color:aquamarine"></div>
+        <div class="content" style="background-color: darkkhaki;"></div>
+
+        <hr>
+
+        <h1>이미지 인라인 배치</h1>
+        <div>
+            <img src="images/pic1.jpg">
+            <img src="images/pic2.jpg">
+            <img src="images/pic3.jpg">
+        </div>
+
+        <hr>
+
+        <h1>이미지 블록 화면 배치</h1>
+        <div id="block">
+            <img src="images/pic1.jpg">
+            <img src="images/pic2.jpg">
+            <img src="images/pic3.jpg">
+        </div>
+
+        <hr>
+        <h1>메뉴(리스트) 배치(블록)</h1>
+        <ul id="list">
+            <li>학과 소개</li>
+            <li>컴퓨터공학전공</li>
+            <li>메타버스전공</li>
+            <li>교육목표</li>
+            <li>주요 교과목</li>
+        </ul>
+
+        <h1>메뉴(리스트) 인라인 배치</h1>
+        <ul id="inline">
+            <li>학과 소개</li>
+            <li>컴퓨터공학전공</li>
+            <li>메타버스전공</li>
+            <li>교육목표</li>
+            <li>주요 교과목</li>
+        </ul>
+
+        <h1>메뉴(리스트) 인라인-블록 배치</h1>
+        <ul id="inlineblock">
+            <li>학과 소개</li>
+            <li>컴퓨터공학전공</li>
+            <li>메타버스전공</li>
+            <li>교육목표</li>
+            <li>주요 교과목</li>
+        </ul>
+
+        <hr>
+
+        <h1>컨텐츠 마진 중첩</h1>
+        <div class="content" style="background-color: crimson;"></div>
+        <div class="content" style="background-color:aquamarine"></div>
+        <div class="overlap" style="background-color: darkkhaki;"></div>
+        <div class="overlap" style="background-color: rgb(47, 196, 87);"></div>
+
+        <hr>
+
+        <h1>박스 사이즈 정하기</h1>
+        <div class="box1" style="background-color: rgb(63, 106, 223);">content-box</div>
+        <div class="box2" style="background-color:rgb(239, 173, 81)">border-box</div>
+    </body>
+</html>
