@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>transform - 구민수</title>
+        <style>
+            .origin{
+                width: 200px;
+                height: 134px;
+                margin: 40px;
+                float: left;
+            }
+
+            .scale-x:hover{
+                transform: scalex(1.2);
+                -ms-transform: scalex(1.2);
+                -webkit-transform: scalex(1.2);
+                -o-transform: scalex(1.2);
+                -moz-transform: scalex(1.2);
+            }
+
+            .scale-y:hover{
+                transform: scaley(1.5);
+                -ms-transform: scaley(1.5);
+                -webkit-transform: scaley(1.5);
+                -o-transform: scaley(1.5);
+                -moz-transform: scaley(1.5);
+            }
+            /*.scale:hover{
+                transform: scale(0.2);
+                -ms-transform: scale(0.2);
+                -webkit-transform: scale(0.22);
+                -o-transform: scale(0.2);
+                -moz-transform: scale(0.2);
+            }
+            */
+
+
+            .scale:hover{
+                transform: scale(1.2);
+                -ms-transform: scale(1.2);
+                -webkit-transform: scale(1.2);
+                -o-transform: scale(1.2);
+                -moz-transform: scale(1.2);
+            }
+        </style>
+    </head>
+    <body>
+        <div class="origin">
+            <div class="scale-x">
+                <img src="images/fruit.jpg">
+            </div>
+        </div>
+
+        <div class="origin">
+            <div class="scale-y">
+                <img src="images/fruit.jpg">
+            </div>
+        </div>
+
+        <div class="origin">
+            <div class="scale">
+                <img src="images/fruit.jpg">
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>transform - 구민수</title>
+        <style>
+            .origin{
+                width: 160px;
+                height: 240px;
+                margin: 40px;
+                float: left;
+                border: 1px solid black;
+            }
+
+            .rose{ 
+                transform: rotateZ(10deg);
+                -ms-transform: rotateZ(10deg);
+                -webkit-transform: rotateZ(10deg);
+                -o-transform: rotateZ(10deg);
+                -moz-transform: rotateZ(10deg);
+            }
+
+            .l-top .rose{
+                transform-origin: left top;
+                -ms-transform-origin: left top;
+                -webkit-transform-origin: left top;
+                -o-transftransform-originorm: left top;
+                -moz-transform-origin: left top;
+            }
+
+            .r-top .rose{
+                transform-origin: right top;
+                -ms-transform-origin: right top;
+                -webkit-transform-origin: right top;
+                -o-transftransform-originorm: right top;
+                -moz-transform-origin: right top;
+            }
+
+            .l-bottom .rose{
+                transform-origin: left bottom;
+                -ms-transform-origin: left bottom;
+                -webkit-transform-origin: left bottom;
+                -o-transftransform-originorm:left bottom;
+                -moz-transform-origin: left bottom;
+            }
+
+            .r-bottom .rose{
+                transform-origin: right bottom;
+                -ms-transform-origin: right bottom;
+                -webkit-transform-origin: right bottom;
+                -o-transftransform-originorm:right bottom;
+                -moz-transform-origin: right bottom;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="origin">
+            <div class="l-top">
+                <img src="images/rose.jpg" class="rose">
+            </div>
+        </div>
+
+        <div class="origin">
+            <div class="r-top">
+                <img src="images/rose.jpg" class="rose">
+            </div>
+        </div>
+
+        <div class="origin">
+            <div class="l-bottom">
+                <img src="images/rose.jpg" class="rose">
+            </div>
+        </div>
+
+        <div class="origin">
+            <div class="r-bottom">
+                <img src="images/rose.jpg" class="rose">
+            </div>
+        </div>
+    </body>
+</html>

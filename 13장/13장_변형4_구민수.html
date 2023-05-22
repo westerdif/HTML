@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>transform - 구민수</title>
+        <style>
+            .origin{
+                width: 200px;
+                height: 134px;
+                margin: 40px;
+                float: left;
+                perspective: 200px; /*원근감*/
+                -ms-perspective: 200px;
+                -webkit-perspective: 200px;
+                -o-perspective: 200px;
+                -moz-perspective: 200px;
+            }
+
+            .rotate-x:hover{
+                transform: rotateX(20deg);
+                -ms-transform: rotateX(20deg);
+                -webkit-transform: rotateX(20deg);
+                -o-transform: rotateX(20deg);
+                -moz-transform: rotateX(20deg);
+            }
+
+            .rotate-y:hover{ /*rotate는 회전*/
+                transform: rotateY(45deg);
+                -ms-transform: rotateY(45deg);
+                -webkit-transform: rotateY(45deg);
+                -o-transform: rotateY(45deg);
+                -moz-transform: rotateY(45deg);
+            }
+
+            .rotate-z:hover{
+                transform: rotateZ(45deg);
+                -ms-transform: rotateZ(45deg);
+                -webkit-transform: rotateZ(45deg);
+                -o-transform: rotateZ(45deg);
+                -moz-transform: rotateZ(45deg);
+            }
+
+            
+            .rotate-xyz:hover{
+                transform: rotate3d(2.5,1.2, -1.5, 45deg);
+                -ms-transform: rotate3d(2.5,1.2, -1.5, 45deg);
+                -webkit-transform: rotate3d(2.5,1.2, -1.5, 45deg);
+                -o-transform: rotate3d(2.5,1.2, -1.5, 45deg);
+                -moz-transform: rotate3d(2.5,1.2, -1.5, 45deg);
+            }
+        </style>
+    </head>
+    <body>
+        <div class="origin">
+            <div class="rotate-x">
+                <img src="images/fruit.jpg">
+            </div>
+        </div>
+
+        <div class="origin">
+            <div class="rotate-y">
+                <img src="images/fruit.jpg">
+            </div>
+        </div>
+
+        <div class="origin">
+            <div class="rotate-z">
+                <img src="images/fruit.jpg">
+            </div>
+        </div>
+
+        <div class="origin">
+            <div class="rotate-xyz">
+                <img src="images/fruit.jpg">
+            </div>
+        </div>
+    </body>
+</html>
