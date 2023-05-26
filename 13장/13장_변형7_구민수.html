@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>transform - 구민수</title>
+        <style>
+            div{
+                width: 200px;
+                height: 200px;
+                
+            }
+
+            .container{
+                border: 1px solid black;
+                display: inline-block;
+                margin-top: 100px;
+                margin-left: 100px;
+                perspective: 300px;
+            }
+
+            .box-1{
+                background-color: aqua;
+                transform: rotateY(45deg);
+                -ms-transform: rotateY(45deg);
+                -webkit-transform: rotateY(45deg);
+                -o-transform: rotateY(45deg);
+                -moz-transform: rotateY(45deg);
+            }
+
+            .box-2{
+                background-color: skyblue;
+                transform: rotateX(45deg);
+                -ms-transform: rotateX(45deg);
+                -webkit-transform: rotateX(45deg);
+                -o-transform: rotateX(45deg);
+                -moz-transform: rotateX(45deg);
+                transform-origin: left top;
+            }
+
+            #tr-style1{
+                transform-style: flat;
+            }
+
+            #tr-style2{
+                transform-style: preserve-3d;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="box-1" id="tr-style1">
+                <div class="box-2">
+
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="box-1" id="tr-style2">
+                <div class="box-2">
+                    
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
