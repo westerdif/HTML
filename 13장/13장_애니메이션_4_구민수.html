@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>animation 1 - 구민수</title>
+
+        <style>
+            div{
+                width: 100px;
+                height: 100px;
+                margin-top: 50px;
+                margin-left: 100px;
+                background-color: silver;
+                animation-name: change-shape;
+                animation-duration: 3s;
+                animation-iteration-count: infinite;
+                animation-direction: normal;
+            }
+
+            @keyframes change-shape{
+                from{
+                    transform:perspective(120px) rotateX(0deg) rotateY(0deg);                   
+                }
+
+                50%{
+                    transform:perspective(120px) rotateX(-180deg) rotateY(0deg);                   
+                }
+
+                to{
+                    transform:perspective(120px) rotateX(-180deg) rotateY(-180deg);
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            
+        </div>
+    </body>
+</html>
