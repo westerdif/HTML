@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+
+        <style>
+            /* 스타일은 필요에 따라 수정 가능합니다. */
+            .menu {
+                display: inline-block;
+                position: relative;
+                margin-right: 20px;
+            }
+            
+            .menu ul {
+                list-style: none;
+                padding: 0;
+                margin: 0;
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+            }
+            
+            .menu li {
+                position: relative;
+            }
+            
+            .menu li:hover > ul {
+                display: block;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="menu">
+            <a href="#">교회소개</a>
+            <ul>
+                <li><a href="#">인사말</a></li>
+                <li><a href="#">교회비전</a></li>
+                <li><a href="#">교회연혁</a></li>
+                <li><a href="#">섬기는 분들</a></li>
+            </ul>
+        </div>
+    
+        <div class="menu">
+            <a href="#">예배시간</a>
+        </div>
+    
+        <div class="menu">
+            <a href="#">다음세대</a>
+            <ul>
+                <li><a href="#">영아부</a></li>
+                <li><a href="#">유년부</a></li>
+                <li><a href="#">유치부</a></li>
+                <li><a href="#">초등부</a></li>
+                <li><a href="#">중등부</a></li>
+                <li><a href="#">고등부</a></li>
+                <li><a href="#">엘림청년부</a></li>
+                <li><a href="#">새청청년부</a></li>
+            </ul>
+        </div>
+    
+        <div class="menu">
+            <a href="#">기타시설</a>
+        </div>
+    
+        <div class="menu">
+            <a href="#">커뮤니티</a>
+            <ul>
+                <li><a href="#">공지상황</a></li>
+                <li><a href="#">광고</a></li>
+                <li><a href="#">갤러리</a></li>
+                <li><a href="#">문의상황</a></li>
+            </ul>
+        </div>
+    
+        <script>
+            // 서브 드롭 메뉴 표시 및 숨김 처리
+            var menus = document.querySelectorAll('.menu');
+    
+            for (var i = 0; i < menus.length; i++) {
+                menus[i].addEventListener('mouseenter', function () {
+                    this.querySelector('ul').style.display = 'block';
+                });
+    
+                menus[i].addEventListener('mouseleave', function () {
+                    this.querySelector('ul').style.display = 'none';
+                });
+            }
+        </script>
+    </body>
+</html>
