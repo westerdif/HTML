@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>메인페이지</title>
+
+        <link rel="stylesheet" type="text/css" href="layout.css">
+
+        <style>
+            .c1 > .moving_images {
+                width: 700px;
+                height: 330px;
+                overflow: hidden;
+                position: relative;
+            }
+
+            .c1 > .moving_images img {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                transition: transform 0.5s ease-in-out;
+            }
+
+            article{
+                overflow: hidden;
+                width: 1100px;
+                margin-left: auto;
+                margin-right: auto;
+                padding-left: 20px;
+            }
+
+            .intro_box{
+                padding-top: 40px;
+            }
+
+            .c1 > .moving_images img:not(:first-child) {
+                transform: translateX(100%);
+            }
+
+            .c3, .c4, .c5{
+                border: 1px solid black;
+            }
+
+            .c1{
+                float: left;
+            }
+
+            .c2{
+                width: 320px;
+                height: 330px;
+                float: left;
+                margin-left: 39px;
+            }
+
+            .log_1{
+                background-color: green;
+                height: 200px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .log_2{
+                background-color: yellowgreen;
+                height: 130px;
+            }
+
+            .button-container {
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .login-link{
+                height: 180px;
+                width: 270px;
+                display: inline-block;
+                padding: 10px 20px;
+                background-color: rgb(58, 189, 58);
+                color: #333;
+                text-decoration: none;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                font-weight: bold;
+                transition: background-color 0.3s ease;
+                text-align: center;
+            }
+
+            .forgot-link {
+                margin-top: 5px;
+                height: 100px;
+                width: 270px;
+                display: inline-block;
+                padding: 10px 20px;
+                background-color: rgb(141, 189, 58);
+                color: #333;
+                text-decoration: none;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                font-weight: bold;
+                transition: background-color 0.3s ease;
+            }
+        
+            .login-link:hover, .forgot-link:hover {
+                background-color: #e0e0e0;
+            }
+
+            .c3{
+                background: url(images/darkness_cross.jpg);
+                width: 240px;
+                height: 400px;
+                line-height: 40px;
+                float: left;
+            }
+
+            h3{
+                color: white;
+            }
+
+            .c4{
+                background: url(images/hol_book.jpg);
+                width: 240px;
+                height: 400px;
+                margin-left: 37px;
+                line-height: 50px;
+                float: left;
+            }
+
+            .c4 > ul{
+                background-color: rgba(255, 255, 255, 0.514);
+            }
+
+            .c5{
+                background-color: yellowgreen;
+                width: 500px;
+                height: 400px;
+                margin-left: 37px;
+                line-height: 40px;
+                float: left;
+            }
+            
+            .c5 > h3{
+                text-align: center;
+            }
+
+            .c5 li{
+                line-height: 60px;
+            }
+
+            .c5 ul{
+                border-top: 1px solid green;
+            }
+
+            .c3, .c4, .c5{
+                margin-top: 20px;
+            }
+
+            .c3 > h3{
+                text-align: center;
+            }
+
+            .c4 > h3{
+                text-align: center;
+            }
+
+            .c3 li{
+                color: white;
+            }
+
+            .hol_text{
+                font-size: 1.1em;
+                margin-top: 40px;
+                text-align: center;
+                line-height: 35px;
+            }
+
+            #box{
+                padding-top: 40px;
+                text-align: center;
+                padding-bottom: 35px;
+            }
+
+            .photo_box{
+                margin-top: 25px;
+                background-color: rgb(44, 42, 42);
+                width: 1000px;
+                height: 700px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        </style>
+
+
+    </head>
+    <body>
+        <header>
+            <div id="main_image">
+                <a href="">
+                    <img src="images/main_icon.png" alt="" class="main_images">
+                </a>
+            </div>
+
+            <nav id="main_menu">
+                <div class="menu">
+                    <a href="introduce.html" class="high_menu" id="c1">교회소개</a>
+                    <ul class="under_menu">
+                        <li><a href="#">인사말</a></li>
+                        <li><a href="#">교회비전</a></li>
+                        <li><a href="#">교회연혁</a></li>
+                        <li><a href="#">섬기는 분들</a></li>
+                    </ul>
+                </div>
+            
+                <div class="menu">
+                    <a href="#" class="high_menu" id="c2">예배시간</a>
+                </div>
+            
+                <div class="menu">
+                    <a href="#" class="high_menu" id="c3">다음세대</a>
+                    <ul class="under_menu">
+                        <li><a href="#">영아부</a></li>
+                        <li><a href="#">유년부</a></li>
+                        <li><a href="#">유치부</a></li>
+                        <li><a href="#">초등부</a></li>
+                        <li><a href="#">중등부</a></li>
+                        <li><a href="#">고등부</a></li>
+                        <li><a href="#">엘림청년부</a></li>
+                        <li><a href="#">새청청년부</a></li>
+                    </ul>
+                </div>
+            
+                <div class="menu">
+                    <a href="#" class="high_menu" id="c4">기타시설</a>
+                </div>
+            
+                <div class="menu">
+                    <a href="#" class="high_menu" id="c5">커뮤니티</a>
+                    <ul class="under_menu">
+                        <li><a href="#">공지상황</a></li>
+                        <li><a href="#">광고</a></li>
+                        <li><a href="#">갤러리</a></li>
+                        <li><a href="#">문의상황</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <div class="intro_box">
+            <article>
+                <section class="c1">
+                    <div class="moving_images">
+                        <img src="images/main_church.image.png" alt="교회사진">
+                        <img src="images/hold_hand.png" alt="다른 이미지1">
+                        <img src="images/three_images.png" alt="다른 이미지2">
+                    </div>
+                </section>
+
+                <section class="c2">
+                    <div class="button-container">
+                        <div>
+                            <a href="log_in_and_sign_up.html" target="_blank" class="login-link">로그인 / 회원가입</a>
+                        </div>
+                        <div>
+                            <a href="" class="forgot-link">아이디 및 비밀번호 찾기</a>
+                        </div>
+                    </div>
+                </section>
+    
+                <section class="c3">
+                    <h3>예배시간</h3>
+                    <ul>
+                        <li>
+                            주일 오전 1부<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- 7:30
+                        </li>
+                        <li>
+                            주일 오전 1부<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- 9:30
+                        </li>
+                        <li>
+                            주일 오전 1부<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- 11:30
+                        </li>
+                        <li>
+                            주일 오후 <br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- 2:30
+                        </li>
+                    </ul>
+                </section>
+    
+                <section class="c4">
+                    <h3>광고</h3>
+                    <ul>
+                        <li>
+                            <a href=""></a>
+                        </li>
+                        <li>
+                            <a href=""></a>
+                        </li>
+                        <li>
+                            <a href=""></a>
+                        </li>
+                        <li>
+                            <a href=""></a>
+                        </li>
+                        <li>
+                            <a href=""></a>
+                        </li>
+                        <li>
+                            <a href=""></a>
+                        </li>
+                    </ul>
+                </section>
+    
+                <section class="c5">
+                    <h3>공지상황</h3>
+                    <ul>
+                        <li>
+                            <a href=""></a>
+                        </li>
+                        <li>
+                            <a href=""></a>
+                        </li>
+                        <li>
+                            <a href=""></a>
+                        </li>
+                        <li>
+                            <a href=""></a>
+                        </li>
+                        <li>
+                            <a href=""></a>
+                        </li>
+                    </ul>
+                </section>
+            </article>
+            
+            <div class="hol_text">
+                <h2>인생의 구절</h2>
+                <p>
+                    “너희는 내일 일을 알지 못한다. 당신의 인생은 무엇입니까? 그것은 잠깐 나타났다가 사라지는 수증기입니다.”<br>
+                    야고보서 4:14
+                </p>
+            </div>
+
+            <div id="box">
+                <h2>포토갤러리</h2>
+                <div class="photo_box">
+
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <div id="main_under">
+                <p>
+                    주소: __________________&nbsp;&nbsp;TEL: 000-000-0000<br>
+                    CopyRight(C) __________________  BY.oooo
+                </p>
+            </div>
+
+            <nav id="main_under_icon">
+                <a href="">개인정보처리방침</a>
+                /
+                <a href="">이메일무단수집거부</a>
+            </nav>
+        </footer>
+
+
+        <script>
+            // 서브 드롭 메뉴 표시 및 숨김 처리
+            var menus = document.querySelectorAll('.menu');
+          
+            for (var i = 0; i < menus.length; i++) {
+              menus[i].addEventListener('mouseenter', function () {
+                this.querySelector('ul').style.display = 'block';
+                document.querySelector('header').style.height = '430px';
+              });
+          
+              menus[i].addEventListener('mouseleave', function () {
+                this.querySelector('ul').style.display = 'none';
+                document.querySelector('header').style.height = '100px';
+              });
+            }
+          </script>
+
+          <script>
+            // 이미지 슬라이드 애니메이션
+            const imageContainer = document.querySelector('.c1 > .moving_images');
+            const images = Array.from(imageContainer.getElementsByTagName('img'));
+            let currentIndex = 0;
+
+            setInterval(() => {
+                const currentImage = images[currentIndex];
+                const nextIndex = (currentIndex + 1) % images.length;
+                const nextImage = images[nextIndex];
+
+                currentImage.style.transform = 'translateX(100%)';
+                nextImage.style.transform = 'translateX(0)';
+
+                currentIndex = nextIndex;
+            }, 3000);
+        </script>
+          
+    </body>
+</html>
