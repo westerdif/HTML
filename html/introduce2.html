@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>교회소개 - 인사말</title>
+
+        <link rel="stylesheet" type="text/css" href="layout.css">
+
+        <style>
+            .intro_box{
+                overflow: hidden;
+                padding-top: 45px;
+                padding-bottom: 45px;
+            }
+
+            .area2 #church_photo{
+                width: 760px;
+                height: 300px;
+                animation-name: moving1;
+                animation-duration: 3s;
+                animation-direction: normal;
+            }
+
+            @keyframes moving1{
+                from{
+                    opacity: 0;
+                }
+
+                to{
+                    opacity: 1;
+                }
+            }
+
+
+            .title_box{
+                font-size: 1.2em;
+                width: 200px;
+                height: 180px;
+                background-color: rgb(1, 153, 1);
+                text-align: center;
+                color: white;
+                float: left;
+                animation-name: moving2;
+                animation-duration: 4s;
+                animation-direction: normal;
+            }
+
+            @keyframes moving2{
+                from{
+                    transform: translateY(150px);
+                    opacity: 0;
+                }
+
+                to{
+                    transform: translateY(0px);
+                    opacity: 1;
+                }
+            }
+
+            .d1 > h2{
+                height: 60px;
+                background-color: rgb(58, 240, 58);
+            }
+
+            h3{
+                margin-top: 30px;
+            }
+
+            .d1{
+                overflow: hidden;
+                border-bottom: 1px solid gray;
+                padding-bottom: 35px;
+            }
+
+            #c_1{
+                margin-top: 50px;
+                margin-bottom: 35px;
+            }
+
+            #c_2{
+                margin-bottom: 35px;
+            }
+
+            p{
+                float: right;
+            }
+
+            .p1{
+                font-size: 2.0em;
+                margin-top: 65px;
+                margin-right: 200px;
+                animation-name: moving3;
+                animation-duration: 5s;
+                animation-direction: normal;
+            }
+
+            @keyframes  moving3{
+                from{
+                    transform: translateX(200px);
+                    opacity: 0;
+                }
+
+                to{
+                    transform: translateX(0px);
+                }
+            }
+
+            .p2{
+                margin-top: 80px;
+                font-weight: bold;
+                animation-name: moving4;
+                animation-duration: 5s;
+                animation-direction: normal;
+            }
+
+            @keyframes  moving4{
+                from{
+                    transform: translateX(200px);
+                    opacity: 0;
+                }
+
+                to{
+                    transform: translateX(0px);
+                }
+            }
+
+            #cl{
+                animation-name: moving5;
+                animation-duration: 5s;
+                animation-direction: normal;
+                
+            }
+
+            @keyframes  moving5{
+                from{
+                    transform: translateX(200px);
+                    opacity: 0;
+                }
+
+                to{
+                    transform: translateX(0px);
+                }
+            }
+
+            .intro_icon {
+                margin-top: 15px;
+                margin-left: 10px;
+                width: 137px;
+                height: 138px;
+            }
+        </style>
+
+
+    </head>
+    <body>
+        <header>
+            <div id="main_image">
+                <a href="index.html">
+                    <img src="images/main_icon.png" alt="" class="main_images">
+                </a>
+            </div>
+
+            <nav id="main_menu">
+                <div class="menu">
+                    <a href="introduce.html" class="high_menu" id="c1">교회소개</a>
+                    <ul class="under_menu">
+                        <li><a href="introduce.html">인사말</a></li>
+                        <li><a href="introduce2.html">교회비전</a></li>
+                        <li><a href="1900.html">교회연혁</a></li>
+                        <li><a href="introduce_teacher.html">섬기는 분들</a></li>
+                    </ul>
+                </div>
+            
+                <div class="menu">
+                    <a href="time.html" class="high_menu" id="c2">예배시간</a>
+                </div>
+            
+                <div class="menu">
+                    <a href="#" class="high_menu" id="c3">다음세대</a>
+                    <ul class="under_menu">
+                        <li><a href="#">영아부</a></li>
+                        <li><a href="#">유년부</a></li>
+                        <li><a href="#">유치부</a></li>
+                        <li><a href="#">초등부</a></li>
+                        <li><a href="#">중등부</a></li>
+                        <li><a href="#">고등부</a></li>
+                        <li><a href="#">엘림청년부</a></li>
+                        <li><a href="#">새청청년부</a></li>
+                    </ul>
+                </div>
+            
+                <div class="menu">
+                    <a href="#" class="high_menu" id="c4">기타시설</a>
+                </div>
+            
+                <div class="menu">
+                    <a href="#" class="high_menu" id="c5">커뮤니티</a>
+                    <ul class="under_menu">
+                        <li><a href="#">공지상황</a></li>
+                        <li><a href="#">광고</a></li>
+                        <li><a href="#">갤러리</a></li>
+                        <li><a href="#">문의상황</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <div class="intro_box">
+            <article class="border">
+                <section  class="area1">
+                    <h2 class="none">교회소개</h2>
+                    <ul>
+                        <li>
+                            <a href="">인사말</a>
+                        </li>
+                        <li>
+                            <a href="">교회비전</a>
+                        </li>
+                        <li>
+                            <a href="">교회연혁</a>
+                            <ul>
+                                <li><a href="">1900's</a></li>
+                                <li><a href="">1910's</a></li>
+                                <li><a href="">1920's</a></li>
+                                <li><a href="">1940's</a></li>
+                                <li><a href="">1950's</a></li>
+                                <li><a href="">1960's</a></li>
+                                <li><a href="">1970's</a></li>
+                                <li><a href="">1980's</a></li>
+                                <li><a href="">1990's</a></li>
+                                <li><a href="">2000's</a></li>
+                                <li><a href="">2010's</a></li>
+                                <li><a href="">2020's</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="">섬기는 분들</a>
+                        </li>
+                    </ul>
+                </section>
+                
+                <section class="area2">
+                    <div id="church">
+                        <img src="images/vir.png" alt="교회 이미지" id="church_photo">
+                    </div>
+
+                    <div class="d1" id="c_1">
+                        <div class="title_box">
+                            <h2>01</h2>
+                            <h3>영구표어</h3>
+                        </div>
+                        <p class="p1">한걸음씩 전진하는 교회!</p>
+                    </div>
+
+                    <div class="d1" id="c_2">
+                        <div class="title_box">
+                            <h2>02</h2>
+                            <h3>핵심사역</h3>
+                        </div>
+                        
+                        <div id="cl">
+                            <img src="images/intro_icon_1.png" alt="아이콘" class="intro_icon">
+                            <img src="images/intro_icon_2.png" alt="아이콘" class="intro_icon">
+                            <img src="images/intro_icon_3.png" alt="아이콘" class="intro_icon">
+                            <img src="images/intro_icon_4.png" alt="아이콘" class="intro_icon">
+
+                        </div>
+                    </div>
+
+                    <div class="d1" id="c_2">
+                        <div class="title_box">
+                            <h2>03</h2>
+                            <h3>금년표어</h3>
+                        </div>
+                        <p class="p1">
+                            찬양의 사람되게 하소서! <br>
+                            시편 146:2
+                        </p>
+                    </div>
+
+                    <div class="d1" id="c_2">
+                        <div class="title_box">
+                            <h2>04</h2>
+                            <h3>금년성구</h3>
+                        </div>
+                        <p class="p2">나의 생전에 여호와를 찬양하며 나의 평생에 내 하나님을 찬송하리로다(시편146:2)</p>
+                    </div>
+                </section>
+            </article>
+        </div>
+
+        <footer>
+            <div id="main_under">
+                <p>
+                    주소: __________________&nbsp;&nbsp;TEL: 000-000-0000<br>
+                    CopyRight(C) __________________  BY.oooo
+                </p>
+            </div>
+
+            <nav id="main_under_icon">
+                <a href="">개인정보처리방침</a>
+                /
+                <a href="">이메일무단수집거부</a>
+            </nav>
+        </footer>
+
+
+        <script>
+            // 서브 드롭 메뉴 표시 및 숨김 처리
+            var menus = document.querySelectorAll('.menu');
+          
+            for (var i = 0; i < menus.length; i++) {
+              menus[i].addEventListener('mouseenter', function () {
+                this.querySelector('ul').style.display = 'block';
+                document.querySelector('header').style.height = '430px';
+              });
+          
+              menus[i].addEventListener('mouseleave', function () {
+                this.querySelector('ul').style.display = 'none';
+                document.querySelector('header').style.height = '100px';
+              });
+            }
+        </script>
+    </body>
+</html>

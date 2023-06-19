@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>메인페이지</title>
+
+        <link rel="stylesheet" type="text/css" href="layout.css">
+
+        <style>
+            .intro_box{
+                padding-top: 30px;
+                padding-bottom: 30px;
+            }
+
+            table{
+                margin-top: 45px;
+                margin-left: auto;
+                margin-right: auto;
+                padding-bottom: 25px;
+
+            }
+
+            .main_images{
+                clear: both;
+            }
+
+            h1{
+                padding-top: 20px;
+                text-align: center;
+                color: yellowgreen;
+            }
+
+            th, td{
+                padding: 10px;
+            }
+
+            th{
+                font-size: 1.3em;
+            }
+
+            td{
+                margin-top: 15px;
+                border-top: 2px solid green;
+                font-weight: bold;
+            }
+
+            .time_img{
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                animation-name: slide1;
+                animation-duration: 3s;
+                animation-direction: normal;
+            }
+
+            @keyframes slide1{
+                from{
+                    transform: translateY(-180px);
+                    opacity: 0;
+                }
+
+                to{
+                    transform: translateY(0px);
+                    opacity: 1;
+                }
+            }
+
+            .a-1, .a1{
+                animation-name: slide2;
+                animation-duration: 4.5s;
+                animation-direction: normal;
+            }
+
+            @keyframes slide2{
+                from{
+                    transform: translateY(-180px);
+                    opacity: 0;
+                }
+
+                to{
+                    transform: translateY(0px);
+                    opacity: 1;
+                }
+            }
+
+            .a-2, .a2{
+                animation-name: slide3;
+                animation-duration: 5.5s;
+                animation-direction: normal;
+            }
+
+            @keyframes slide3{
+                from{
+                    transform: translateY(-180px);
+                    opacity: 0;
+                }
+
+                to{
+                    transform: translateY(0px);
+                    opacity: 1;
+                }
+            }
+        </style>
+
+
+    </head>
+    <body>
+        <header>
+            <div id="main_image">
+                <a href="index.html">
+                    <img src="images/main_icon.png" alt="" class="main_images">
+                </a>
+            </div>
+
+            <nav id="main_menu">
+                <div class="menu">
+                    <a href="introduce.html" class="high_menu" id="c1">교회소개</a>
+                    <ul class="under_menu">
+                        <li><a href="introduce.html">인사말</a></li>
+                        <li><a href="introduce2.html">교회비전</a></li>
+                        <li><a href="1900.html">교회연혁</a></li>
+                        <li><a href="introduce_teacher.html">섬기는 분들</a></li>
+                    </ul>
+                </div>
+            
+                <div class="menu">
+                    <a href="time.html" class="high_menu" id="c2">예배시간</a>
+                </div>
+            
+                <div class="menu">
+                    <a href="#" class="high_menu" id="c3">다음세대</a>
+                    <ul class="under_menu">
+                        <li><a href="#">영아부</a></li>
+                        <li><a href="#">유년부</a></li>
+                        <li><a href="#">유치부</a></li>
+                        <li><a href="#">초등부</a></li>
+                        <li><a href="#">중등부</a></li>
+                        <li><a href="#">고등부</a></li>
+                        <li><a href="#">엘림청년부</a></li>
+                        <li><a href="#">새청청년부</a></li>
+                    </ul>
+                </div>
+            
+                <div class="menu">
+                    <a href="#" class="high_menu" id="c4">기타시설</a>
+                </div>
+            
+                <div class="menu">
+                    <a href="#" class="high_menu" id="c5">커뮤니티</a>
+                    <ul class="under_menu">
+                        <li><a href="#">공지상황</a></li>
+                        <li><a href="#">광고</a></li>
+                        <li><a href="#">갤러리</a></li>
+                        <li><a href="#">문의상황</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <div class="intro_box">
+                <div id="img_box">
+                    <img src="images/time.png" alt="교회 이미지" class="time_img">
+                </div>
+
+                <h1 class="a-1">집회안내</h1>
+                <table class="a1">
+                    <tr>
+                      <th>예배</th>
+                      <th>시간</th>
+                      <th>장소</th>
+                    </tr>
+                    <tr>
+                      <td rowspan="3">주일오전예배</td>
+                      <td>1부/ 오전 8:00</td>
+                      <td>1층 중예배실</td>
+                    </tr>
+                    <tr>
+                      <td>2부/ 오전 9:30</td>
+                      <td>2층 본당</td>
+                    </tr>
+                    <tr>
+                      <td>3부/ 오전 11:30</td>
+                      <td>2층 본당</td>
+                    </tr>
+                    <tr>
+                      <td>주일오후예배</td>
+                      <td>오후 2:30</td>
+                      <td>2층 본당</td>
+                    </tr>
+                    <tr>
+                      <td>수요기도회</td>
+                      <td>오후 7:30</td>
+                      <td>2층 본당</td>
+                    </tr>
+                    <tr>
+                      <td>금요기도회</td>
+                      <td>오후 9:00</td>
+                      <td>2층 본당</td>
+                    </tr>
+                    <tr>
+                      <td>새벽기도회</td>
+                      <td>주일~금 오전 5:00</td>
+                      <td>2층 본당</td>
+                    </tr>
+                  </table>
+                  
+                  <h1 class="a-2">주일학교예배</h1>
+                  <table class="a2">
+                    <tr>
+                        <th>예배</th>
+                        <th>시간</th>
+                        <th>장소</th>
+                    </tr>
+
+                    <tr>
+                        <td>영아부</td>
+                        <td>오전 11:30</td>
+                        <td>1층 영·유치부 예배실</td>
+                    </tr>
+
+                    <tr>
+                        <td>유치부</td>
+                        <td>오전 9:30</td>
+                        <td>1층 영·유치부 예배실</td>
+                    </tr>
+
+                    <tr>
+                        <td>유년부</td>
+                        <td>오전 9:30</td>
+                        <td>지하 소예배실</td>
+                    </tr>
+
+                    <tr>
+                        <td>초등부</td>
+                        <td>오전 9:30</td>
+                        <td>1층 중예배실</td>
+                    </tr>
+
+                    <tr>
+                        <td>중등부</td>
+                        <td>오전 11:30</td>
+                        <td>지하 소예배실</td>
+                    </tr>
+
+                    <tr>
+                        <td>고등부</td>
+                        <td>오전 11:30</td>
+                        <td>1층 중예배실</td>
+                    </tr>
+
+                    <tr>
+                        <td>엘림청년부</td>
+                        <td>오후 2:30</td>
+                        <td>2층 본당</td>
+                    </tr>
+
+                    <tr>
+                        <td>새청청년부</td>
+                        <td>오후 2:30</td>
+                        <td>2층 본당</td>
+                    </tr>
+                  </table>
+        </div>
+
+        <footer>
+            <div id="main_under">
+                <p>
+                    주소: __________________&nbsp;&nbsp;TEL: 000-000-0000<br>
+                    CopyRight(C) __________________  BY.oooo
+                </p>
+            </div>
+
+            <nav id="main_under_icon">
+                <a href="">개인정보처리방침</a>
+                /
+                <a href="">이메일무단수집거부</a>
+            </nav>
+        </footer>
+
+
+        <script>
+            // 서브 드롭 메뉴 표시 및 숨김 처리
+            var menus = document.querySelectorAll('.menu');
+          
+            for (var i = 0; i < menus.length; i++) {
+              menus[i].addEventListener('mouseenter', function () {
+                this.querySelector('ul').style.display = 'block';
+                document.querySelector('header').style.height = '430px';
+              });
+          
+              menus[i].addEventListener('mouseleave', function () {
+                this.querySelector('ul').style.display = 'none';
+                document.querySelector('header').style.height = '100px';
+              });
+            }
+          </script>
+
+          <script>
+            // 이미지 슬라이드 애니메이션
+            const imageContainer = document.querySelector('.c1 > .moving_images');
+            const images = Array.from(imageContainer.getElementsByTagName('img'));
+            let currentIndex = 0;
+
+            setInterval(() => {
+                const currentImage = images[currentIndex];
+                const nextIndex = (currentIndex + 1) % images.length;
+                const nextImage = images[nextIndex];
+
+                currentImage.style.transform = 'translateX(100%)';
+                nextImage.style.transform = 'translateX(0)';
+
+                currentIndex = nextIndex;
+            }, 3000);
+        </script>
+          
+    </body>
+</html>
